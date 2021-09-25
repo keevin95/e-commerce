@@ -16,7 +16,7 @@
 }
 
 * {
-    margin: 0;
+    margin: 0px;
 }
 
 body {
@@ -103,7 +103,6 @@ h1 {
 
 main {
     width: 85%;
-    height: 78vh;
     padding: 3%;
     display: flex;
     flex-direction: column;
@@ -111,8 +110,20 @@ main {
     margin: auto;
 }
 
+.main_sobreN {
+    height: 78vh;
+}
+
+.main_contacto {
+    height: 78vh;
+}
+
 .main_index {
-    height: 300vh;
+    height: 0%;
+}
+
+.main_crear_cuenta {
+    height: 78vh;
 }
 
 .main_index img {
@@ -183,10 +194,6 @@ footer {
 
 
 /*CREAR CUENTA*/
-
-.main_inicio_sesion {
-    position: relative;
-}
 
 .absoluto {
     position: absolute;
@@ -341,8 +348,9 @@ textarea {
 /*Sobre nosotros*/
 
 .h2-sn {
-    padding: 2%;
     width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     font-size: 1.5em;
     background-color: var(--main--dark-purple);
     color: var(--main--wisteria);
@@ -461,6 +469,9 @@ textarea {
         padding: 2%;
     }
     /*CREAR CUUENTA*/
+    .main_crear_cuenta {
+        height: 0%;
+    }
     .contenedor-formulario {
         margin-top: 0%;
     }
@@ -514,8 +525,23 @@ textarea {
         width: 30%;
     }
     /*sobre nosotros*/
+    .h2-sn {
+        padding: 0%;
+        padding-bottom: 2%;
+        padding-top: 2%;
+    }
     .contenedor_sobre_nos {
         margin: auto;
         width: 50%;
+    }
+    .contenedor_sobre_nos a {
+        display: none;
+    }
+    .contenedor_sobre_nos .ubicacion {
+        margin-bottom: 5%;
+    }
+    .contenedor_sobre_nos .ubicacion iframe {
+        display: block;
+        margin: auto;
     }
 }
