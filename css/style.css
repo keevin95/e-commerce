@@ -7,7 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
-:root {
+ :root {
     --main--wisteria: #b497d6ff;
     --main--ksu-purple: #592e83ff;
     --main--dark-purple: #230c33ff;
@@ -61,6 +61,10 @@ h1 {
     font-size: 13px;
 }
 
+.menu-responsive {
+    display: none;
+}
+
 .menu {
     position: relative;
     display: inline-block;
@@ -99,6 +103,7 @@ h1 {
 
 main {
     width: 85%;
+    height: 78vh;
     padding: 3%;
     display: flex;
     flex-direction: column;
@@ -106,7 +111,11 @@ main {
     margin: auto;
 }
 
-main img {
+.main_index {
+    height: 300vh;
+}
+
+.main_index img {
     height: 150px;
 }
 
@@ -116,7 +125,7 @@ main img {
     align-items: center;
     border: 2px solid var(--main--dark-purple);
     padding: 5%;
-    box-shadow: 4px 4px 6px 1px var(--main--dark-purple);
+    box-shadow: 0px 0px 5px 3px var(--main--dark-purple);
     margin-top: 10%;
 }
 
@@ -169,7 +178,6 @@ footer {
     color: var(--main--languid-lavender);
     text-align: center;
     font-size: 14px;
-    bottom: 0;
     letter-spacing: 1px;
 }
 
@@ -251,14 +259,14 @@ input[type="text"]::placeholder {
 }
 
 form input[type="submit"] {
-    color: var(--main--dark-purple);
-    background-color: var(--main--languid-lavender);
+    color: var(--main--languid-lavender);
+    background-color: var(--main--dark-purple);
     padding-top: 2%;
     padding-bottom: 2%;
     border-radius: 10px;
     border: none;
     width: 70%;
-    border: 1px solid var(--main--dark-purple);
+    border: 1px solid var(--main--wisteria);
     cursor: pointer;
     text-transform: uppercase;
     margin-top: 5%;
@@ -266,6 +274,7 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     background-color: var(--main--languid-lavender);
+    color: var(--main--dark-purple);
 }
 
 textarea {
@@ -306,6 +315,11 @@ textarea {
     padding-left: 2%;
 }
 
+.formulario_contacto input[type="mail"] {
+    border-radius: 10px;
+    border: none;
+}
+
 .formulario_contacto label {
     margin-top: 3%;
     font-weight: bold;
@@ -329,11 +343,11 @@ textarea {
 .h2-sn {
     padding: 2%;
     width: 100%;
-    font-weight: bold;
     font-size: 1.5em;
     background-color: var(--main--dark-purple);
     color: var(--main--wisteria);
     margin-bottom: 10%;
+    box-shadow: 0px 0px 5px 1px var(--main--dark-purple);
 }
 
 .h2-sn span {
@@ -350,17 +364,158 @@ textarea {
 
 .contenedor_sobre_nos .conocenos {
     display: block;
+    text-transform: uppercase;
+    font-size: 1em;
 }
 
 .contenedor_sobre_nos p {
+    margin-top: 10%;
     margin-bottom: 10%;
 }
 
 .contenedor_sobre_nos .ubicacion h3 {
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     text-decoration: underline;
+    text-align: center;
 }
 
 .contenedor_sobre_nos .ubicacion iframe {
     display: none;
+}
+
+
+/* MEDIA QUERIE*/
+
+@media(min-width:1920px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0%;
+        width: 100%;
+        background: var(--main--wisteria);
+        border-bottom: 2px solid var(--main--ksu-purple);
+    }
+    header a {
+        text-decoration: none;
+    }
+    header img {
+        width: 50%;
+    }
+    header h1 {
+        margin-right: 0%;
+        font-family: "friends";
+        font-size: 5em;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-responsive {
+        width: 100%;
+        height: 5vh;
+        display: block;
+        margin: auto;
+        background-color: var(--main--dark-purple);
+    }
+    .menu-responsive ul {
+        width: 100%;
+        height: 100%;
+        padding-left: 0%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+    .menu-responsive ul li {
+        align-items: center;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    .menu-responsive ul li a {
+        text-decoration: none;
+        color: var(--main--languid-lavender);
+    }
+    .menu-responsive ul li:hover {
+        border-bottom: 1px solid var(--main--blast-off-bronze)
+    }
+    .description {
+        background-color: var(--main--languid-lavender);
+        font-size: 2em;
+    }
+    main {
+        height: 0%;
+    }
+    .main_index {
+        padding-top: 0%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .product {
+        margin-top: 0%;
+        height: 40vh;
+        width: 26%;
+        margin-left: 3%;
+        padding: 2%;
+    }
+    /*CREAR CUUENTA*/
+    .contenedor-formulario {
+        margin-top: 0%;
+    }
+    .genero-form {
+        margin: auto;
+        width: 25%;
+        padding: 2%;
+        border: 2px solid var(--main--dark-purple);
+    }
+    .contenedor-formulario .checkbox {
+        width: 30%;
+    }
+    .contenedor-formulario form input[type="password"],
+    input[type="text"] {
+        width: 25%;
+    }
+    #enviar_cuenta {
+        padding: 1%;
+        width: 50%;
+        font-weight: bold;
+    }
+    #enviar_cuenta:hover {
+        background-color: var(--main--blast-off-bronze);
+    }
+    footer {
+        padding: 1%;
+    }
+    /*CONTACTO*/
+    .formulario_contacto h2 {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .formulario_contacto textarea {
+        margin-top: 3%;
+        border: 2px solid var(--main--dark-purple);
+        padding-top: 1%;
+    }
+    .formulario_contacto label {
+        width: 50%;
+    }
+    .formulario_contacto label input {
+        display: block;
+        padding: 1%;
+        margin: auto;
+        margin-top: 2%;
+        width: 30%;
+    }
+    .formulario_contacto input[type="submit"] {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        width: 30%;
+    }
+    /*sobre nosotros*/
+    .contenedor_sobre_nos {
+        margin: auto;
+        width: 50%;
+    }
 }
