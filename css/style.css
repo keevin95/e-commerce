@@ -606,6 +606,7 @@ textarea {
         flex-wrap: wrap;
     }
     .product {
+        background-color: aqua;
         margin-top: 5%;
         margin-left: 3%;
         padding: 1%;
