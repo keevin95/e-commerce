@@ -566,6 +566,12 @@ textarea {
     }
 }
 
+@media(min-width:1640px) {
+    .product {
+        background-color: black;
+    }
+}
+
 @media(min-width:1024px) {
     header {
         display: flex;
