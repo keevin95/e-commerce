@@ -738,7 +738,7 @@ textarea {
     }
 }
 
-@media(min-width:405px) {
+@media(min-width:480px) {
     header {
         display: flex;
         justify-content: space-around;
@@ -763,6 +763,17 @@ textarea {
     .menu {
         margin: auto;
         font-size: 2ex;
+    }
+    .h2-sn {
+        font-size: 1.2em;
+    }
+}
+
+@media(min-width:360px) {
+    .main_contacto input {
+        display: block;
+        padding: 2%;
+        margin-top: 5%;
     }
     .h2-sn {
         font-size: 1.2em;
