@@ -681,6 +681,9 @@ textarea {
 }
 
 @media(min-width:640px) {
+    .product {
+        background-color: red;
+    }
     header {
         display: flex;
         justify-content: space-around;
