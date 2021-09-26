@@ -774,6 +774,9 @@ textarea {
 }
 
 @media(min-width:360px) {
+    .product {
+        background-color: black;
+    }
     .main_contacto input {
         display: block;
         padding: 2%;
