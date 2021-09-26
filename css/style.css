@@ -566,6 +566,12 @@ textarea {
     }
 }
 
+@media(min-width:1440px) {
+    .product {
+        background-color: black;
+    }
+}
+
 @media(min-width:1024px) {
     header {
         display: flex;
@@ -681,9 +687,6 @@ textarea {
 }
 
 @media(min-width:640px) {
-    .product {
-        background-color: red;
-    }
     header {
         display: flex;
         justify-content: space-around;
@@ -774,9 +777,6 @@ textarea {
 }
 
 @media(min-width:360px) {
-    .product {
-        background-color: black;
-    }
     .main_contacto input {
         display: block;
         padding: 2%;
