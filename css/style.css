@@ -473,6 +473,7 @@ textarea {
         align-items: center;
     }
     .product {
+        background-color: black;
         margin-top: 0%;
         height: 40vh;
         width: 26%;
@@ -566,12 +567,6 @@ textarea {
     }
 }
 
-@media(min-width:1440px) {
-    .product {
-        background-color: black;
-    }
-}
-
 @media(min-width:1024px) {
     header {
         display: flex;
@@ -612,7 +607,6 @@ textarea {
         flex-wrap: wrap;
     }
     .product {
-        background-color: aqua;
         margin-top: 5%;
         margin-left: 3%;
         padding: 1%;
