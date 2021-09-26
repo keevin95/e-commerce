@@ -82,6 +82,8 @@ h1 {
     right: -21px;
     top: 30px;
     font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .menu:hover .dropdown {
@@ -273,6 +275,7 @@ form input[type="submit"] {
     cursor: pointer;
     text-transform: uppercase;
     margin-top: 5%;
+    font-weight: bold;
 }
 
 form input[type="submit"]:hover {
@@ -391,6 +394,10 @@ textarea {
     display: none;
 }
 
+#enviar_cuenta:hover {
+    background-color: var(--main--blast-off-bronze);
+}
+
 
 /* MEDIA QUERIE*/
 
@@ -491,7 +498,6 @@ textarea {
     #enviar_cuenta {
         padding: 1%;
         width: 50%;
-        font-weight: bold;
     }
     #enviar_cuenta:hover {
         background-color: var(--main--blast-off-bronze);
@@ -553,8 +559,115 @@ textarea {
     }
 }
 
-@media(min-width:1024) {
-    main .product {
-        width: 40%;
+@media(min-width:1024px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0%;
+        width: 100%;
+        background: var(--main--wisteria);
+        border-bottom: 2px solid var(--main--ksu-purple);
+    }
+    header a {
+        text-decoration: none;
+    }
+    header img {
+        width: 50%;
+    }
+    header h1 {
+        margin-right: 0%;
+        font-family: "friends";
+        font-size: 3em;
+        width: 70%;
+    }
+    .menu {
+        margin: auto;
+        font-size: 5ex;
+    }
+    .menu .dropdown {
+        right: -50px;
+        top: 35px;
+        text-align: justify;
+    }
+    .menu .dropdown li {
+        padding-bottom: 3%;
+    }
+    .main_index {
+        margin: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .product {
+        margin-top: 5%;
+        margin-left: 3%;
+        padding: 1%;
+        width: 27%;
+    }
+    .main_crear_cuenta {
+        height: 0%;
+    }
+    .contenedor-formulario {
+        margin-top: 0%;
+    }
+    /*CONTACTO*/
+    .main_contacto {
+        height: 100%;
+    }
+    .formulario_contacto h2 {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .formulario_contacto textarea {
+        margin-top: 3%;
+        border: 2px solid var(--main--dark-purple);
+        padding-top: 1%;
+    }
+    .formulario_contacto label {
+        width: 50%;
+    }
+    .formulario_contacto label input {
+        display: block;
+        padding: 1%;
+        margin: auto;
+        margin-top: 2%;
+        width: 50%;
+    }
+    .formulario_contacto input[type="submit"] {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        width: 30%;
+    }
+    .footer_contacto {
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+    }
+    /*sobre nosotros*/
+    .contenedor_sobre_nos {
+        margin: auto;
+        width: 50%;
+        padding-bottom: 5%;
+    }
+    .contenedor_sobre_nos p {
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    .contenedor_sobre_nos a {
+        display: none;
+    }
+    .contenedor_sobre_nos .ubicacion {
+        width: 100%;
+        margin: auto;
+    }
+    .contenedor_sobre_nos .ubicacion iframe {
+        display: block;
+        width: 100%;
+        height: 300px;
+    }
+    .h2-sn {
+        margin-bottom: 0%;
+        padding-bottom: 1%;
+        padding-top: 1%;
     }
 }
