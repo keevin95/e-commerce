@@ -103,6 +103,10 @@ h1 {
     color: var(--main--languid-lavender);
 }
 
+.dropdown li a::before {
+    color: var(--main--languid-lavender);
+}
+
 main {
     width: 85%;
     padding: 3%;
