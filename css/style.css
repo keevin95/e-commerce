@@ -506,6 +506,9 @@ textarea {
         padding: 1%;
     }
     /*CONTACTO*/
+    .main_contacto {
+        margin-bottom: 5%;
+    }
     .formulario_contacto h2 {
         padding-top: 2%;
         padding-bottom: 2%;
@@ -638,11 +641,11 @@ textarea {
         padding-bottom: 1%;
         width: 30%;
     }
-    .footer_contacto {
+    /*.footer_contacto {
         position: fixed;
         width: 100%;
         bottom: 0px;
-    }
+    }*/
     /*sobre nosotros*/
     .contenedor_sobre_nos {
         margin: auto;
